@@ -18,15 +18,8 @@ public class Encrypt {
     private static String useKey = Config.ENCRYPT_KEY;
     private final static Map<String, Set<String>> encryptMap = new HashMap();
     static {
-        encryptMap.put("uc", new HashSet<>(Arrays.asList("mobile_phone","identity","id_card","bank_card","phone","company_phone","relative_mobile","second_relative_mobile","new_info","old_info","bank_card_code","bank_card_phone","bank_card_identity","id_card_no","user_phone","identity_code","userinfo_data","medium_id")));
-        encryptMap.put("loan", new HashSet<>(Arrays.asList("phone","d_value","receive_account","repay_account","payer_mobile","request","data_json")));
-        encryptMap.put("ccs", new HashSet<>(Arrays.asList("cert_no","mobile","bank_card_no","request_json")));
-        encryptMap.put("sign", new HashSet<>(Arrays.asList("identity","mobile","contract_template_param")));
-        encryptMap.put("wallet", new HashSet<>(Arrays.asList("bank_card_code","phone","cellphone","account_bank_card_code","credential_no","mobile_no","account_no","medium_id")));
-        encryptMap.put("payment", new HashSet<>(Arrays.asList("cert_no","card_phone","card_no","medium_no","send_info")));
-        encryptMap.put("sms", new HashSet<>(Arrays.asList("identity","mobile")));
-        encryptMap.put("plutus", new HashSet<>(Arrays.asList("phone")));
-        encryptMap.put("credit", new HashSet<>(Arrays.asList("mobile","pid","home_phone")));
+        
+        encryptMap.put("test", new HashSet<>(Arrays.asList("mobile","idno")));
 
     }
 
